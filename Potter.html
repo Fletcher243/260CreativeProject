@@ -1,0 +1,45 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="creative.css">
+<script>
+var Gr= function(){
+   document.getElementById("Select").src = "gtext.png";
+   document.getElementById("description").innerHTML = 'You will likely be a hero';
+}
+var Ra= function(){
+   document.getElementById("Select").src = "rtext.png";
+   document.getElementById("description").innerHTML = 'You will likely be smart';
+}
+var Hu= function(){
+   document.getElementById("Select").src = "htext.png";
+      document.getElementById("description").innerHTML = 'You will likely be... Whatever a hufflepuff is. What even is a hufflepuff?';
+}
+var Sl= function(){
+   document.getElementById("Select").src = "stext.png";
+   document.getElementById("description").innerHTML = 'You will likely be a villian of some sort';
+}
+</script>
+</head>
+
+<body>
+<img src="harryp.png" height="150" width="90%" hspace="5%" vspace="20">
+<p></p>
+<img src="choose.png" height="50" width="50%" hspace="25%">
+<p></p>
+<img src="gryffindor.png" height="175" width="175" hspace="5%" vspace="30" onclick="Gr()">
+<img src="ravenclaw.png" height="175" width="175" hspace="5%" vspace="30" onclick="Ra()">
+<img src="hufflepuff.png" height="175" width="175" hspace="5%" vspace="30" onclick="Hu()">
+<img src="slytherin.png" height="175" width="175" hspace="5%" vspace="30" onclick="Sl()">
+
+<img src="defaultImageOfSomeSort.png" id="Select" height="30" width="40%" hspace="30%" vspace="30">
+
+<p id="description"></p>
+
+<!--javascript applied to these next images?-->
+<!--<img src="gtext.png" height="30" width="40%" hspace="30%" vspace="30">
+<img src="rtext.png" height="30" width="40%" hspace="30%" vspace="30">
+<img src="htext.png" height="30" width="40%" hspace="30%" vspace="30">
+<img src="stext.png" height="30" width="40%" hspace="30%" vspace="30">-->
+</body>
+
+</html>
