@@ -4,25 +4,27 @@
 <script>
 var Gr= function(){
    document.getElementById("Select").src = "gtext.png";
-   document.getElementById("description").innerHTML = 'You will likely be a hero';
+   document.getElementById("Select").show();
+   document.getElementById("description").innerHTML = 'Gryffindor values bravery, daring, nerve, and chivalry.<br><a href="http://harrypotter.wikia.com/wiki/Gryffindor"> Click for more information about your house</a>';
 }
 var Ra= function(){
    document.getElementById("Select").src = "rtext.png";
-   document.getElementById("description").innerHTML = 'You will likely be smart';
+   document.getElementById("description").innerHTML = 'Ravenclaw values intelligence, knowledge, and wit.<br><a href="http://harrypotter.wikia.com/wiki/Ravenclaw"> Click for more information about your house</a>';
 }
 var Hu= function(){
-   document.getElementById("Select").src = "htext.png";
-      document.getElementById("description").innerHTML = 'You will likely be... Whatever a hufflepuff is. What even is a hufflepuff?';
+   
+   document.getElementById("description").innerHTML = 'Hufflepuff values hard work, dedication, patience, loyalty, and fair play.<br><a href="http://harrypotter.wikia.com/wiki/Hufflepuff"> Click for more information about your house</a>';
+document.getElementById("Select").src = "htext.png";
 }
 var Sl= function(){
    document.getElementById("Select").src = "stext.png";
-   document.getElementById("description").innerHTML = 'You will likely be a villian of some sort';
+   document.getElementById("description").innerHTML = 'Slytherin house values ambition, cunning and resourcefulness.<br><a href="http://harrypotter.wikia.com/wiki/Slytherin"> Click for more information about your house</a>';
 }
 </script>
 </head>
 
 <body>
-<img src="harryp.png" height="150" width="90%" hspace="5%" vspace="20">
+<img src="HarryPotter.png" height="150" width="90%" hspace="5%" vspace="20">
 <p></p>
 <img src="choose.png" height="50" width="50%" hspace="25%">
 <p></p>
@@ -31,7 +33,7 @@ var Sl= function(){
 <img src="hufflepuff.png" height="175" width="175" hspace="5%" vspace="30" onclick="Hu()">
 <img src="slytherin.png" height="175" width="175" hspace="5%" vspace="30" onclick="Sl()">
 
-<img src="defaultImageOfSomeSort.png" id="Select" height="30" width="40%" hspace="30%" vspace="30">
+<img id="Select" height="30" width="40%" hspace="30%" vspace="30">
 
 <p id="description"></p>
 
